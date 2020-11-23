@@ -11,7 +11,8 @@ weatherForm.addEventListener('submit', (e) => {
   forecastEl.textContent = '';
 
   fetch(
-    `http://localhost:5000/weather?address=${encodeURIComponent(address)}`
+    // remove origin from the url for the use in Heroku
+    `/weather?address=${encodeURIComponent(address)}`
   ).then((res) => {
     res.json().then((data) => {
       if (data.error) {
