@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" href="/img/weather.ico">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  {{>header}}
+  <main>
+    <ul class="help-list">
+      <li>
+        <h2 class="help-question">
+          Do I have to type in the full address to find the weather?
+        </h2>
+        <p class="help-answer">
+          No. You can search by the partial address for example, "Toronto" or even just a postal code.
+        </p>
+      </li>
+      <li>
+        <h2 class="help-question">
+          The returned location is not the place that I'm looking for.
+        </h2>
+        <p class="help-answer">
+          You can try again with more specific address. Try adding state and/or country. This will help weather app find the correct address that you are looking for.
+        </p>
+        
+      </li>
+    </ul>
+  </main>
+  {{>footer}}
+</body>
+
+</html>
