@@ -2,6 +2,8 @@
 
 A Node Express project that serves a webpage to the client where the user can fetch the weather information from the same server.
 
+- [Live Demo](https://toypiano-node-weather-website.herokuapp.com/)
+
 ## Setting up SSH Keys
 
 SSH is the protocol used to securely transfer code between your machine and GitHub/Heroku.
@@ -80,5 +82,5 @@ Remove origin from the fetch url address.
 
 ### Deploy Your Application
 
-Run `heroku create` from your application root to create a new application. This will create the new application and set up a new heroku Git remote. Push your code to that remote to deploy the application!
-You can run `git push heroku master` to deploy. From there, run heroku open to open your application in the browser.
+Run `heroku create your-app-name` from your application root to create a new application. This will create the new application and set up a new heroku Git remote. Push your code to that remote to deploy the application!
+You can run `git push heroku master` to deploy. From there, run `heroku open` to open your application in the browser.
