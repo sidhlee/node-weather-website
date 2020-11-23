@@ -82,5 +82,5 @@ Remove origin from the fetch url address.
 
 ### Deploy Your Application
 
-Run `heroku create your-app-name` from your application root to create a new application. This will create the new application and set up a new heroku Git remote. Push your code to that remote to deploy the application!
+Run `heroku create your-app-name` from your application root to create a new application. This will create the new application and set up a new "heroku" Git remote. Push your code to that remote to deploy the application!
 You can run `git push heroku master` to deploy. From there, run `heroku open` to open your application in the browser.

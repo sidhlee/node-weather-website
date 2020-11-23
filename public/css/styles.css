@@ -110,6 +110,12 @@ button:active {
   filter: brightness(1.1);
 }
 
+.about {
+  max-width: 35em;
+  margin: auto;
+  padding: 1em;
+}
+
 .help-list {
   max-width: 35em;
   margin: auto;
