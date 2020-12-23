@@ -46,7 +46,7 @@ a {
   color: var(--text-muted);
 }
 
-a:hover {
+a:hover a.active {
   color: var(--primary);
 }
 
@@ -94,6 +94,8 @@ main {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .address-form {
@@ -112,7 +114,8 @@ main {
 }
 
 .address-form input {
-  width: 90%;
+  width: 66%;
+  min-width: 300px;
   margin: 0 auto;
   padding: 1em;
   font-size: 1rem;
@@ -148,7 +151,7 @@ footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  color: var(--primary);
+  color: var(--text-muted);
 }
 
 .img-wrapper {

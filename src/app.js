@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 
+const entries = require('./help-entries')
+
 const app = express()
 
 const PORT = process.env.PORT || 5000
@@ -10,12 +12,15 @@ const viewsPath = path.join(__dirname, './templates/views/')
 const partialsPath = path.join(__dirname, './templates/partials/')
 const publicPath = path.join(__dirname, '../public/')
 
+// Use static assets
 app.use(express.static(publicPath))
 
+// Setup Handlebars
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
+// Setup routes
 app.get('/', (req, res) => {
   return res.render('index', { title: 'Weather' })
 })
@@ -27,17 +32,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
   return res.render('help', {
     title: 'FAQ',
-    entries: [
-      {
-        question: `I don't know the exact address of the location.`,
-        answer:
-          'You can search the weather by partial address like city, street, or postal code.',
-      },
-      {
-        question: `The returned address is not the one I'm looking for.`,
-        answer: `The algorithm returns the first match of many possible addresses. Try adding more details like country, state or province.`,
-      },
-    ],
+    entries,
   })
 })
 
