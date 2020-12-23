@@ -41,7 +41,8 @@ a {
   color: var(--text-muted);
 }
 
-a:hover a.active {
+a:hover,
+a.active {
   color: var(--primary);
 }
 
