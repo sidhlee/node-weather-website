@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  {{>header}}
+  <main>
+    <ul class="qna-list">
+      {{#each entries }}
+       <li>
+        <h2 class="question">{{this.question}}</h2>
+         <p class="answer">{{this.answer}}</p>
+       </li>
+     {{/each}}
+    </ul>
+  </main>
+  {{>footer}}
+</body>
+</html>
