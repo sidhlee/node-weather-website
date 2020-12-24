@@ -48,14 +48,16 @@ app.get('/weather', async (req, res) => {
     const { current, location } = await getCurrentWeather(address)
 
     const searchAddress = `${location.name}, ${location.region}, ${location.country}`
-    const localTime = current.observation_time
+    const localTime = location.localtime // Cspell:disable-line
     const temperature = current.temperature
     const feelsLike = current.feelslike // Cspell:disable-line
+    const description = current.weather_descriptions[0]
 
     return res.json({
       searchAddress,
       localTime,
       temperature,
+      description,
       feelsLike,
     })
   } catch (err) {

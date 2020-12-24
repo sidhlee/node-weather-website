@@ -11,9 +11,14 @@
   <main>
     <form class="address-form">
       <label for="weather-input">Enter the address to get your weather!</label>
-      <input type="text" name="address" id="weather-input" placeholder="Seoul">
+      <input type="text" name="address" id="weather-input" placeholder="Seoul" required>
       <button>Search</button>
     </form>
+    <div class="weather-display">
+      <h2 class="location"></h2>
+      <p class="time"></p>
+      <p class="weather-info"></p>
+    </div>
   </main>
   {{>footer}}
 
