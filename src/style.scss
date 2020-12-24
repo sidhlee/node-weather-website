@@ -116,6 +116,13 @@ main {
   }
 }
 
+.weather-display {
+  text-align: center;
+  .time {
+    margin: 1em auto;
+  }
+}
+
 footer {
   grid-row: 3 / 4;
   grid-column: 2 / 3;

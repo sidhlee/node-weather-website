@@ -140,6 +140,14 @@ main {
   background: var(--primary);
 }
 
+.weather-display {
+  text-align: center;
+}
+
+.weather-display .time {
+  margin: 1em auto;
+}
+
 footer {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;

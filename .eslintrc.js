@@ -20,5 +20,6 @@ module.exports = {
     'class-methods-use-this': 'off',
     'prefer-template': 'off',
     'prefer-destructuring': 'off',
+    'arrow-body-style': 'off',
   },
 }

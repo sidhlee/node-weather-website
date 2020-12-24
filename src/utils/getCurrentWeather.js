@@ -23,6 +23,8 @@ const getCurrentWeather = async (address) => {
     } else if (err.error) {
       // error object sent from Weatherstack api
       throw Error('Unable to find the location. Please try again.')
+    } else {
+      throw err
     }
   }
 }
