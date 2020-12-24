@@ -10,7 +10,8 @@ addressForm.addEventListener('submit', async (e) => {
 
   const addressInputEl = e.target.address
   const address = addressInputEl.value
-  const origin = `http://localhost:5000`
+  // const origin = `http://localhost:5000`
+  const origin = ``
   const url = origin + `/weather?address=${encodeURIComponent(address)}`
 
   locationElm.textContent = 'Loading...'
